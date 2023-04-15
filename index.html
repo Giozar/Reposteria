@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8" />
+	<title>Repostería Delicias</title>
+	<!-- Enlace a la librería de iconos -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+	<link rel="shortcut icon" href="/img/mini.png" type="image/x-icon" />
+	<link rel="stylesheet" href="estilos.css" />
+	<link rel="stylesheet" href="src/css/person-card.css">
+	<link rel="stylesheet" href="src/css/gallery.css">
+	<link rel="stylesheet" href="src/css/catalog.css">
+	<script src="script.js" type="module"></script>
+</head>
+
+<body>
+	<header>
+		<nav>
+			<ul>
+				<li>
+					<a href="#inicio" id="inicio-link">
+						<span>Inicio</span>
+						<i class="fas fa-home"></i>
+					</a>
+				</li>
+				<li>
+					<a href="#menu">
+						<span>Menú</span>
+						<i class="fas fa-utensils"></i>
+					</a>
+				</li>
+				<li>
+					<a href="#pastel">
+						<span>Haz tu pastel</span>
+						<i class="fas fa-birthday-cake"></i>
+					</a>
+				</li>
+				<li>
+					<a href="#contacto">
+						<span>Contacto</span>
+						<i class="fas fa-envelope"></i>
+					</a>
+				</li>
+				<li>
+					<a href="#testimonios">
+						<span>Testimonios</span>
+						<i class="fas fa-comment"></i>
+					</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+
+	<section class="inicio" id="inicio">
+		<div class="presentacion">
+			<div class="presentacion-card">
+				<div class="person-card">
+					<div class="person-img">
+						<img src="/src/assets/img/person-card/dania.jpg" alt="Foto de la persona" />
+					</div>
+					<div class="person-info">
+						<h2>Nombre Apellido</h2>
+						<p>Descripción de la persona</p>
+						<ul class="social-links">
+							<li><a class="fab fa-facebook" href="https://www.facebook.com/DaniaAvilaE"
+									target="_blank"></a></li>
+							<li><a class="fab fa-instagram" href="https://www.instagram.com/daniav.esc/"
+									target="_blank"></a></li>
+							<li><a class="fab fa-whatsapp" href="#"></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div class="presentacion-txt">
+				<h1 class="principal-txt">Bienvenidos a Repostería Delicias</h1>
+				<p class="descripcion-txt">
+					¡Bienvenidos a nuestra página web de repostería! Aquí podrán
+					disfrutar de una amplia variedad de deliciosos postres que estamos
+					seguros satisfarán su paladar y despertarán su dulce lado. En
+					nuestra repostería, nos apasiona crear sabores únicos y frescos
+					utilizando solo los ingredientes de la más alta calidad. Desde
+					pasteles y cupcakes hasta galletas y brownies, ofrecemos una gran
+					variedad de opciones dulces para que puedan disfrutar en cualquier
+					ocasión. Además, estamos comprometidos a brindar un servicio
+					excepcional y personalizado para cada uno de nuestros clientes.
+
+				</p>
+			</div>
+		</div>
+
+		<div class="galeria">
+			<div class="gallery-container">
+				<section class="gallery">
+					<div class="gallery-item">
+						<img src="/src/assets/img/gallery/chocolate.jpg" alt="Chocolate">
+						<div class="gallery-item-overlay">
+							<h3>Chocolate</h3>
+						</div>
+					</div>
+					<div class="gallery-item">
+						<img src="/src/assets/img/gallery/tres-leches.jpg" alt="Tres Leches">
+						<div class="gallery-item-overlay">
+							<h3>Tres Leches</h3>
+						</div>
+					</div>
+					<div class="gallery-item">
+						<img src="/src/assets/img/gallery/vainilla.jpg" alt="Vainilla">
+						<div class="gallery-item-overlay">
+							<h3>Vainilla</h3>
+						</div>
+					</div>
+					<div class="gallery-item">
+						<img src="/src/assets/img/gallery/cupcake.jpg" alt="Cupcake">
+						<div class="gallery-item-overlay">
+							<h3>Cupcake</h3>
+						</div>
+					</div>
+				</section>
+			</div>
+		</div>
+		<button id="realizar-pedido">Realizar un pedido</button>
+	</section>
+	
+	<section id="catalogo">
+		<h2>Catalogo</h2>
+		<div class="catalog-container">
+			<div class="card">
+				<div class="card-circle"></div>
+				<div class="card-image">
+					<img src="/src/assets/img/catalog/chocolate.png" alt="Pastel" />
+				</div>
+				<div class="card-title">
+					<h3>Chocolate Cake</h3>
+				</div>
+				<div class="card-details">
+					<div class="card-size el">
+						<div class="size-title">Tamaño:</div>
+						<div class="size small">C</div>
+						<div class="size medium">M</div>
+						<div class="size big">G</div>
+					</div>
+		
+					<div class="card-color el">
+						<div class="color-title">Color:</div>
+						<div class="color rosa"></div>
+						<div class="color amarillo"></div>
+						<div class="color cafe"></div>
+						<div class="color blanco"></div>
+					</div>
+		
+					<div class="card-toppings el">
+						<div class="toppings-title">Carteles:</div>
+		
+						<div class="topping-options">
+							<div class="topping-option">
+								<input type="radio" id="baby-shower" name="topping" value="baby-shower" />
+								<label for="baby-shower">Baby</label>
+							</div>
+							<div class="topping-option">
+								<input type="radio" id="cumpleanos" name="topping" value="cumpleanos" />
+								<label for="cumpleanos">Cumpleaños</label>
+							</div>
+							<div class="topping-option">
+								<input type="radio" id="boda" name="topping" value="boda" />
+								<label for="boda">Boda</label>
+							</div>
+							<div class="topping-option">
+								<input type="radio" id="quinceanera" name="topping" value="quinceanera" />
+								<label for="quinceanera">Quinceañera</label>
+							</div>
+						</div>
+					</div>
+		
+					<div class="card-buy el">
+						<button class="comprar-btn">
+							Comprar ahora
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<section id="menu">
+		<h2>Nuestro menú</h2>
+		<ul>
+			<li>
+				<img src="/src/assets/img/principal/pastel-chocolate.jpg" alt="Pastel de chocolate" />
+				<h3>Pastel de chocolate</h3>
+				<p>Delicioso pastel de chocolate con cobertura de chocolate.</p>
+			</li>
+			<li>
+				<img src="/src/assets/img/principal/cupcake-vainilla.jpg" alt="Cupcake de vainilla" />
+				<h3>Cupcake de vainilla</h3>
+				<p>Delicioso cupcake de vainilla con glaseado de fresa.</p>
+			</li>
+			<!-- Agrega más productos aquí -->
+		</ul>
+	</section>
+
+
+	<section id="testimonios">
+		<h2>Testimonios de nuestros clientes</h2>
+		<ul>
+			<li>
+				<p>
+					"Me encantó el pastel de zanahoria, definitivamente volveré a
+					ordenar."
+				</p>
+				<p>- Juan Pérez</p>
+			</li>
+			<li>
+				<p>
+					"Los cupcakes de vainilla son increíbles, mi familia y yo los
+					amamos."
+				</p>
+				<p>- Ana García</p>
+			</li>
+			<!-- Agrega más testimonios aquí -->
+		</ul>
+	</section>
+
+	<section id="blog">
+		<h2>Nuestro blog</h2>
+		<ul>
+			<li>
+				<h3>Cómo hacer un pastel de zanahoria delicioso</h3>
+				<p>
+					En este artículo, te enseñamos cómo hacer un pastel de zanahoria
+					delicioso en casa.
+				</p>
+				<a href="#">Leer más</a>
+			</li>
+			<li>
+				<h3>Las mejores recetas de cupcakes</h3>
+				<p>
+					En este artículo, te compartimos algunas de nuestras mejores recetas
+					de cupcakes para que puedas disfrutar en casa.
+				</p>
+				<a href="#">Leer más</a>
+			</li>
+			<!-- Agrega más publicaciones aquí -->
+		</ul>
+	</section>
+
+	<section id="contacto">
+		<h2>Contáctanos</h2>
+		<form action="#" method="POST">
+			<label for="nombre">Nombre:</label>
+			<input type="text" id="nombre" name="nombre" required />
+			<label for="correo">Correo electrónico:</label>
+			<input type="email" id="correo" name="correo" required />
+			<label for="mensaje">Mensaje:</label>
+			<textarea id="mensaje" name="mensaje" required></textarea>
+			<button type="submit">Enviar mensaje</button>
+		</form>
+	</section>
+
+	<footer>
+		<p>&copy; 2023 Repostería Delicias</p>
+	</footer>
+</body>
+</html>

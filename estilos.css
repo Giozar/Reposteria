@@ -1,0 +1,424 @@
+@font-face {
+    font-family: “CenturyGothic”;
+    src: url('./font/Century\ Gothic.ttf') format('woff'), url('./src/assets/font/CenturyGothic.ttf') format('truetype');
+
+    font-family: 'Qwigley';
+    src: url('./src/assets/font/Qwigley-Regular.ttf');
+    font-style: normal;
+    font-weight: normal;
+    font-display: swap;
+}
+
+body {
+    background-color: #F7C1B8;
+}
+/* estilos de la seccion de inicio */
+.inicio {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Qwigley', cursive;
+    font-size: 50px;
+}
+
+.descripcion-txt{
+    color: #A97F8B;
+    font-family: 'Century Gothic', sans-serif;
+    text-align: justify;
+}
+
+.presentacion {
+    display: flex;
+    padding: 0% 0% 0% 20%;
+}
+
+.presentacion-txt {
+    margin: 0% 10% 0% 5%;
+    width: 500px;
+    padding-bottom: 5%;
+}
+
+/* estilos de la carta de presentacion */
+.presentacion-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 400px;
+}
+
+/* estilos del contenedor de gallery */
+.galeria{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.gallery-container{
+    height: 200px;
+    width: 800px; 
+    box-shadow: 2px 10px 5px 2px rgba(0.5, 1, 1, 0.5);
+    border-radius: 100px 100px 100px 100px;
+    background: linear-gradient(to bottom, #F0E8D6, #F3DAC4, #F2CBC5);
+}
+
+.catalog-container{
+    display: flex;
+}
+
+/* Estilos para el boton */
+#realizar-pedido {
+    display: inline-block;
+    margin: 0 auto;
+    background-color: #d69e7c;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+#realizar-pedido:hover {
+    background-color: #9c5645;
+}
+
+#realizar-pedido:active {
+    transform: translateY(1px);
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilos para la sección de menú */
+#menu {
+    background-color: #fce1d2;
+    padding: 50px;
+    text-align: center;
+}
+
+#menu h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+#menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#menu li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+#menu li a {
+    color: #9c5645;
+    display: block;
+    font-size: 18px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+#menu li a:hover {
+    color: #d69e7c;
+}
+
+#inicio {
+    background: linear-gradient(to bottom, #F4C6C6, #F2CBC5, #F4D4C2, #F4D8C0);
+    text-align: center;
+    color: #8F4847;
+    font-family: “CenturyGothic”, sans-serif;
+}
+
+/* Estilos para la sección de galería */
+#galeria {
+    background-color: linear-gradient(to right, #F4C6C6, #F2CBC5, #F4D4C2, #F4D8C0);
+    padding: 50px;
+    text-align: center;
+}
+
+#galeria h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+#galeria ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#galeria li {
+    display: inline-block;
+    margin: 0 20px 20px 0;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+#galeria li img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+#galeria li:hover img {
+    transform: scale(1.2);
+}
+
+/* Estilos para la sección de testimonios */
+#testimonios {
+    background-color: #f7e7ce;
+    padding: 50px;
+    text-align: center;
+}
+
+#testimonios h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+#testimonios ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#testimonios li {
+    display: inline-block;
+    margin: 0 20px 20px 0;
+    width: 300px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+#testimonios li p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+#testimonios li cite {
+    font-size: 16px;
+}
+
+/* Estilos para la sección del blog */
+#blog {
+    background-color: linear-gradient(to right, #F4C6C6, #F2CBC5, #F4D4C2, #F4D8C0);
+    padding: 50px;
+    text-align: center;
+}
+
+#blog h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+#blog ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#blog li {
+    margin-bottom: 40px;
+}
+
+#blog li h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#blog li p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+#blog li a {
+    color: #9c5645;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+#blog li a:hover {
+    color: #d69e7c;
+}
+
+/* Estilos para el formulario de contacto */
+#contacto {
+    background-color: #f7e7ce;
+    padding: 50px;
+    text-align: center;
+}
+
+#contacto h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+#contacto form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+#contacto label {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+#contacto input[type="text"],
+#contacto input[type="email"],
+#contacto textarea {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+#contacto textarea {
+    height: 150px;
+}
+
+#contacto input[type="submit"] {
+    background-color: #9c5645;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#contacto input[type="submit"]:hover {
+    background-color: #d69e7c;
+}
+
+/* Estilos para el pie de página */
+footer {
+    background-color: linear-gradient(to right, #F4C6C6, #F2CBC5, #F4D4C2, #F4D8C0);
+    padding: 20px;
+    color: linear-gradient(220.55deg, #565656 0%, #181818 100%);
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+    font-size: 16px;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #f7e7ce;
+}
+
+/* Estilos para la barra de navegación */
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover span {
+    opacity: 1;
+}
+
+nav ul li a:hover i {
+    opacity: 0;
+}
+
+nav ul li a span {
+    position: absolute;
+    bottom: 10px;
+    opacity: 0;
+    transition: all 0.1s ease;
+}
+
+nav ul li a i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.1s ease;
+}
+
+nav ul li:nth-child(1) a {
+    background-color: #FCE1D2;
+}
+
+nav ul li:nth-child(1):hover a {
+    background: linear-gradient(to right, #F5DDA9, #eec774);
+}
+
+nav ul li:nth-child(2) a {
+    background-color: #FCE1D2;
+}
+
+nav ul li:nth-child(2):hover a {
+    background: linear-gradient(to right, #EEC2A1, #f0a770);
+}
+
+nav ul li:nth-child(3) a {
+    background-color: #FCE1D2;
+}
+
+nav ul li:nth-child(3):hover a {
+    background: linear-gradient(to right, #E9A997, #ee886c);
+}
+
+nav ul li:nth-child(4) a {
+    background-color: #FCE1D2;
+}
+
+nav ul li:nth-child(4):hover a {
+    background: linear-gradient(to right, #E08D8E, #eb6e70);
+}
+
+
+nav ul li:nth-child(5) a {
+    background-color: #FCE1D2;
+}
+
+nav ul li:nth-child(5):hover a {
+    background: linear-gradient(to right, #D782A0, #e7696b);
+}
+
+
+
+nav ul li a:hover {
+    width: 120px;
+    height: 40px;
+    border-radius: 50px;
+}
+
+

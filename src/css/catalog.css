@@ -1,0 +1,208 @@
+.card {
+    width: 300px;
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+    background-color: rgb(249, 210, 210);
+    border-radius: 50px;
+}
+
+.card-circle {
+    position: absolute;
+    border-radius: 50%;
+    background-color: white;
+    height: 250px;
+    width: 250px;
+    top: -20px;
+    right: -25px;
+    transition: all 0.8s ease;
+}
+
+.card:hover .card-circle {
+    border-radius: 100px 200px 100px 350px;
+    height: 550px;
+    width: 550px;
+    top: -300px;
+    right: -160px;
+}
+
+.card img {
+    position: absolute;
+    width: 80%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 1s ease;
+}
+
+.card:hover img {
+    top: 30%;
+    transform: translate();
+    transition: all 0.9s ease;
+}
+
+.card-title {
+    position: absolute;
+    text-align: center;
+    font-size: 25px;
+    width: 100%;
+    margin-top: 350px;
+    transition: all 0.9s ease;
+}
+
+.card:hover .card-title {
+    margin-top: 70%;
+    transition: all 1s ease;
+}
+
+.card-details {
+    font-family: 'Century Gothic', sans-serif;
+    position: absolute;
+    width: 300px;
+    top: 500px;
+    opacity: 0;
+    transition: all 0.9s ease;
+}
+
+.card:hover .card-details {
+    top: 270px;
+    user-select: none;
+    opacity: 1;
+    transition: all 1s ease;
+}
+
+.el {
+    margin: 10px 0px 5px 0;
+}
+
+.card-size {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.size-title {
+    display: inline-block;
+    margin: 0 5px 0 0;
+}
+
+.size {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: aliceblue;
+    border-radius: 5px;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.card-color {
+    display: flex;
+    justify-content: center;
+}
+
+.color-title {
+    display: inline-block;
+    margin: 0 5px 0 0;
+}
+
+.color {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin: 0 2px 0 2px;
+    border-radius: 50px;
+}
+
+.rosa {
+    background-color: pink;
+}
+
+.amarillo {
+    background-color: yellow;
+}
+
+.cafe {
+    background-color: brown;
+}
+
+.blanco {
+    background-color: white;
+}
+
+.card-toppings {
+    text-align: center;
+}
+
+.toppings-title {
+    text-align: center;
+}
+
+.topping-options {
+    flex-direction: column;
+}
+
+
+.topping-option {
+    display: inline-block;
+    align-items: center;
+    margin: 2px 0;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+input[type="radio"] {
+    display: none;
+}
+
+.topping-option label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #f8f8f8;
+    font-size: 8px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: "Font Awesome 5 Free";
+}
+
+
+input[type="radio"]:checked+label {
+    border: solid #fff 1px;
+    background-color: rgb(255, 201, 201);
+
+    
+}
+
+.card-buy {
+    text-align: center;
+}
+
+.comprar-btn {
+    background-color: #ffc0c0;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Estilos cuando se pasa el cursor sobre el botón */
+.comprar-btn:hover {
+    background-color: #ffadad; 
+    /* Cambiamos el color de fondo */
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
+    /* Añadimos una sombra más grande */
+}
