@@ -1,5 +1,7 @@
 import { createCard } from "./src/js/catalog.js";
 
 document.addEventListener('DOMContentLoaded',()=>{
-    createCard();
+    for (let i = 0; i < 7; i++) {
+        createCard();
+    }
 })

@@ -10,18 +10,31 @@
 }
 
 body {
-    background-color: #F7C1B8;
+    background-color: #F2E6D5;
+    margin: 0px;
+    padding: 0px;
 }
 /* estilos de la seccion de inicio */
 .inicio {
+    margin: 100px;
+    border-radius: 50px;
+    border: solid;
+    padding-top: 30px;
     align-items: center;
     justify-content: center;
     text-align: center;
+    background: linear-gradient(to bottom, #F4C6C6, #F2CBC5, #F4D4C2, #F4D8C0);
+    color: #8F4847;
+    font-family: “CenturyGothic”, sans-serif;
 }
 
-h1 {
+.principal-title {
     font-family: 'Qwigley', cursive;
-    font-size: 50px;
+    font-size: 80px;
+    border: solid;
+    margin: auto;
+    background-color: #FFFFFF;
+    border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
 }
 
 .descripcion-txt{
@@ -63,10 +76,30 @@ h1 {
     border-radius: 100px 100px 100px 100px;
     background: linear-gradient(to bottom, #F0E8D6, #F3DAC4, #F2CBC5);
 }
-
+/* estilos del catalogo de pasteles */
+.catalogo{
+    border: solid;
+    color: #8F4847;
+    border-radius: 50px;
+    margin: 10px;
+    background: linear-gradient(to bottom,#F4D4C2, #F4D8C0);
+    padding-bottom: 50px;
+}
+.catalog-title{
+    text-align: center;
+    font-family: 'Qwigley', cursive;
+    color: #8F4847;
+    font-size: 60px;
+    margin: auto;
+}
 .catalog-container{
     display: flex;
 }
+.catalog-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+}  
 
 /* Estilos para el boton */
 #realizar-pedido {
@@ -90,85 +123,6 @@ h1 {
 #realizar-pedido:active {
     transform: translateY(1px);
     box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
-}
-
-/* Estilos para la sección de menú */
-#menu {
-    background-color: #fce1d2;
-    padding: 50px;
-    text-align: center;
-}
-
-#menu h2 {
-    font-size: 48px;
-    margin-bottom: 20px;
-}
-
-#menu ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-#menu li {
-    display: inline-block;
-    margin: 0 20px;
-}
-
-#menu li a {
-    color: #9c5645;
-    display: block;
-    font-size: 18px;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-#menu li a:hover {
-    color: #d69e7c;
-}
-
-#inicio {
-    background: linear-gradient(to bottom, #F4C6C6, #F2CBC5, #F4D4C2, #F4D8C0);
-    text-align: center;
-    color: #8F4847;
-    font-family: “CenturyGothic”, sans-serif;
-}
-
-/* Estilos para la sección de galería */
-#galeria {
-    background-color: linear-gradient(to right, #F4C6C6, #F2CBC5, #F4D4C2, #F4D8C0);
-    padding: 50px;
-    text-align: center;
-}
-
-#galeria h2 {
-    font-size: 48px;
-    margin-bottom: 20px;
-}
-
-#galeria ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-#galeria li {
-    display: inline-block;
-    margin: 0 20px 20px 0;
-    width: 200px;
-    height: 200px;
-    overflow: hidden;
-    border-radius: 50%;
-}
-
-#galeria li img {
-    width: 100%;
-    height: auto;
-    transition: transform 0.3s ease;
-}
-
-#galeria li:hover img {
-    transform: scale(1.2);
 }
 
 /* Estilos para la sección de testimonios */
@@ -329,6 +283,15 @@ footer a:hover {
 }
 
 /* Estilos para la barra de navegación */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #F7C1B8;
+    padding: 10px;
+    z-index: 999;
+}
+
 nav ul {
     display: flex;
     justify-content: center;
@@ -413,12 +376,8 @@ nav ul li:nth-child(5):hover a {
     background: linear-gradient(to right, #D782A0, #e7696b);
 }
 
-
-
 nav ul li a:hover {
     width: 120px;
     height: 40px;
     border-radius: 50px;
 }
-
-
