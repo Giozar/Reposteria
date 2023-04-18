@@ -132,20 +132,20 @@
     background-color: white;
 }
 
-.card-toppings {
+.card-topics {
     text-align: center;
 }
 
-.toppings-title {
+.topics-title {
     text-align: center;
 }
 
-.topping-options {
+.topic-options {
     flex-direction: column;
 }
 
 
-.topping-option {
+.topic-option {
     display: inline-block;
     align-items: center;
     margin: 2px 0;
@@ -158,7 +158,7 @@ input[type="radio"] {
     display: none;
 }
 
-.topping-option label {
+.topic-option label {
     display: flex;
     align-items: center;
     justify-content: center;
