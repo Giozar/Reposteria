@@ -8,9 +8,10 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
 	<link rel="shortcut icon" href="/src/assets/img/fav-icon/mini1.png" type="image/x-icon" />
 	<link rel="stylesheet" href="estilos.css" />
-	<link rel="stylesheet" href="src/css/person-card.css">
-	<link rel="stylesheet" href="src/css/gallery.css">
-	<link rel="stylesheet" href="src/css/catalog.css">
+	<link rel="stylesheet" href="src/css/person-card.css" />
+	<link rel="stylesheet" href="src/css/gallery.css" />
+	<link rel="stylesheet" href="src/css/catalog.css" />
+	<link rel="stylesheet" href="src/css/reviews.css">
 	<script src="script.js" type="module"></script>
 </head>
 
@@ -63,10 +64,14 @@
 						<h2>Nombre Apellido</h2>
 						<p>Descripción de la persona</p>
 						<ul class="social-links">
-							<li><a class="fab fa-facebook" href="https://www.facebook.com/DaniaAvilaE"
-									target="_blank"></a></li>
-							<li><a class="fab fa-instagram" href="https://www.instagram.com/daniav.esc/"
-									target="_blank"></a></li>
+							<li>
+								<a class="fab fa-facebook" href="https://www.facebook.com/DaniaAvilaE"
+									target="_blank"></a>
+							</li>
+							<li>
+								<a class="fab fa-instagram" href="https://www.instagram.com/daniav.esc/"
+									target="_blank"></a>
+							</li>
 							<li><a class="fab fa-whatsapp" href="#"></a></li>
 						</ul>
 					</div>
@@ -85,7 +90,6 @@
 					variedad de opciones dulces para que puedan disfrutar en cualquier
 					ocasión. Además, estamos comprometidos a brindar un servicio
 					excepcional y personalizado para cada uno de nuestros clientes.
-
 				</p>
 			</div>
 		</div>
@@ -94,25 +98,25 @@
 			<div class="gallery-container">
 				<section class="gallery">
 					<div class="gallery-item">
-						<img src="/src/assets/img/gallery/chocolate.jpg" alt="Chocolate">
+						<img src="/src/assets/img/gallery/chocolate.jpg" alt="Chocolate" />
 						<div class="gallery-item-overlay">
 							<h3>Chocolate</h3>
 						</div>
 					</div>
 					<div class="gallery-item">
-						<img src="/src/assets/img/gallery/tres-leches.jpg" alt="Tres Leches">
+						<img src="/src/assets/img/gallery/tres-leches.jpg" alt="Tres Leches" />
 						<div class="gallery-item-overlay">
 							<h3>Tres Leches</h3>
 						</div>
 					</div>
 					<div class="gallery-item">
-						<img src="/src/assets/img/gallery/vainilla.jpg" alt="Vainilla">
+						<img src="/src/assets/img/gallery/vainilla.jpg" alt="Vainilla" />
 						<div class="gallery-item-overlay">
 							<h3>Vainilla</h3>
 						</div>
 					</div>
 					<div class="gallery-item">
-						<img src="/src/assets/img/gallery/cupcake.jpg" alt="Cupcake">
+						<img src="/src/assets/img/gallery/cupcake.jpg" alt="Cupcake" />
 						<div class="gallery-item-overlay">
 							<h3>Cupcake</h3>
 						</div>
@@ -122,12 +126,14 @@
 		</div>
 		<button id="realizar-pedido">Realizar un pedido</button>
 	</section>
-	
+
 	<section class="catalogo" id="catalogo">
 		<h2 class="catalog-title">Catalogo</h2>
 		<div class="catalog-container">
 			<div class="card">
-				<div class="card-circle"></div>
+				<div class="card-circle">
+					<p class="price">$00.00</p>
+				</div>
 				<div class="card-image">
 					<img src="/src/assets/img/catalog/chocolate.png" alt="Pastel" />
 				</div>
@@ -135,7 +141,7 @@
 					<h3>Chocolate Cake</h3>
 				</div>
 				<div class="card-details">
-					<div class="card-size el">
+					<!-- <div class="card-size el">
 						<div class="size-title">Tamaño:</div>
 						<div class="size small">C</div>
 						<div class="size medium">M</div>
@@ -171,37 +177,92 @@
 								<label for="quinceanera">Quinceañera</label>
 							</div>
 						</div>
+					</div> -->
+
+					<div class="card-description">
+						<p class="card-description-title">Descripción</p>
+						<p class="card-description-txt">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+							eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+							enim ad minim veniam, quis nostrud exercitation ullamco laboris
+							nisi ut aliquip ex ea commodo consequat.
+						</p>
 					</div>
-		
+
 					<div class="card-buy el">
-						<button class="comprar-btn">
-							Comprar ahora
-						</button>
+						<button class="comprar-btn">Comprar ahora</button>
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
 
-	<section id="testimonios">
-		<h2>Testimonios de nuestros clientes</h2>
-		<ul>
-			<li>
-				<p>
-					"Me encantó el pastel de zanahoria, definitivamente volveré a
-					ordenar."
-				</p>
-				<p>- Juan Pérez</p>
-			</li>
-			<li>
-				<p>
-					"Los cupcakes de vainilla son increíbles, mi familia y yo los
-					amamos."
-				</p>
-				<p>- Ana García</p>
-			</li>
-			<!-- Agrega más testimonios aquí -->
-		</ul>
+	<section class="reviews-section">
+		<h2>Customer Reviews</h2>
+		<div class="review-cards-container">
+			<!-- Example review card -->
+			<div class="review-card">
+				<img class="review-card-photo" src="/src/assets/img/person-card/dania.jpg" alt="User Photo" />
+				<div class="rating">
+					<span class="star-icon">&#9733;</span>
+					<span class="star-icon">&#9733;</span>
+					<span class="star-icon">&#9733;</span>
+					<span class="star-icon">&#9733;</span>
+					<span class="star-icon">&#9733;</span>
+				</div>
+				<div class="review-title">Best cake ever!</div>
+				<div class="review-content">
+					I ordered a cake for my son's birthday and it was absolutely
+					amazing. The cake was moist and flavorful, and the design was
+					perfect. I highly recommend this bakery!
+				</div>
+				<div class="tags">
+					<span class="tag">Birthday cake</span>
+					<span class="tag">Delicious</span>
+				</div>
+				<div class="review-card-likes">
+					<span class="heart-icon">&#10084;</span>
+					<span class="heart-count">10</span>
+				</div>
+			</div>
+
+			<!-- Add more review cards here -->
+		</div>
+
+		<form class="review-form">
+			<h3>Write a Review</h3>
+			<div class="form-group">
+				<label for="review-title">Title</label>
+				<input type="text" id="review-title" name="review-title"
+					placeholder="Enter a title for your review..." />
+			</div>
+			<div class="form-group">
+				<label for="review-content">Content</label>
+				<textarea id="review-content" name="review-content" placeholder="Write your review here..."></textarea>
+			</div>
+			<div class="form-group">
+				<label for="review-tags">Tags</label>
+				<div id="review-tags" class="tags">
+					<span class="tag">Delicious</span>
+					<span class="tag">Beautiful</span>
+					<span class="tag">Professional</span>
+					<span class="tag">Minimalist</span>
+					<span class="tag">Simple</span>
+					<span class="tag">Dynamic</span>
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="review-rating">Rating</label>
+				<div id="review-rating" class="rating">
+					<span class="star-icon">☆</span>
+					<span class="star-icon">☆</span>
+					<span class="star-icon">☆</span>
+					<span class="star-icon">☆</span>
+					<span class="star-icon">☆</span>
+				</div>
+			</div>
+			<button type="submit" class="btn btn-primary">Submit</button>
+		</form>
 	</section>
 
 	<section id="blog">
@@ -244,4 +305,5 @@
 		<p>&copy; 2023 Repostería Delicias</p>
 	</footer>
 </body>
+
 </html>

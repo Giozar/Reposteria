@@ -1,60 +1,146 @@
-.menu {
-  font-family: "Helvetica Neue", sans-serif;
-  color: #333;
-  margin: 0 auto;
+/* Review section */
+.reviews-section {
   max-width: 800px;
-  padding: 20px;
+  margin: 0 auto;
+  padding: 50px 20px;
+  background-color: #FCEAE6;
 }
 
-h2 {
-  font-size: 36px;
+/* Review cards */
+.review-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.review-card {
+  background-color: #fff;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 30px;
+  width: calc(33.33% - 20px);
+  min-width: 300px;
+}
+
+.review-card-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.review-card-content {
+  font-size: 16px;
   margin-bottom: 20px;
 }
 
-ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-li {
-  border: 1px solid #ccc;
+.review-card-tags {
   margin-bottom: 20px;
-  overflow: hidden;
+}
+
+.review-card-photo {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+
+.tag {
+  background-color: #FFD3B5;
+  color: #C96454;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin-right: 10px;
+  font-size: 14px;
+  display: inline-block;
+}
+
+.review-card-likes {
+  font-size: 16px;
+  color: #999;
+  margin-bottom: 10px;
+}
+
+.heart-icon {
+  color: #ff5050;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.heart-icon:hover {
+  color: #e60000;
+}
+
+.heart-icon.active {
+  color: #e60000;
+}
+
+/* Review form */
+.review-form {
+  max-width: 600px;
+  margin: 0 auto;
   padding: 20px;
-  position: relative;
-  transition: all 0.2s ease-in-out;
+  background-color: #FCEAE6;
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-li:hover {
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
-  transform: translateY(-5px);
+.form-group {
+  margin-bottom: 20px;
 }
 
-h3 {
-  font-size: 24px;
-  margin-top: 0;
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #C96454;
 }
 
-p {
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: inset 0px 1px 2px rgba(0, 0, 0, 0.1);
   font-size: 16px;
   margin-bottom: 10px;
 }
 
-img {
-  float: right;
-  margin-left: 20px;
-  max-width: 200px;
+input[type="text"]:focus,
+textarea:focus {
+  outline: none;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
 }
 
-@media (max-width: 768px) {
-  .menu {
-    padding: 10px;
-  }
-  
-  img {
-    float: none;
-    margin: 0 auto;
-    max-width: 100%;
-  }
+.rating {
+  font-size: 0;
 }
+
+.star-icon {
+  font-size: 30px;
+  color: #ddd;
+  cursor: pointer;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.star-icon.active,
+.star-icon:hover {
+  color: #ffc107;
+}
+
+/* Button styles */
+.btn {
+  background-color: #FFD3B5;
+  color: #C96454;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+

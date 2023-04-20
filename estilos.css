@@ -18,7 +18,6 @@ body {
 .inicio {
     margin: 100px;
     border-radius: 50px;
-    border: solid;
     padding-top: 30px;
     align-items: center;
     justify-content: center;
@@ -78,10 +77,9 @@ body {
 }
 /* estilos del catalogo de pasteles */
 .catalogo{
-    border: solid;
     color: #8F4847;
     border-radius: 50px;
-    margin: 10px;
+    margin: 100px;
     background: linear-gradient(to bottom,#F4D4C2, #F4D8C0);
     padding-bottom: 50px;
 }
