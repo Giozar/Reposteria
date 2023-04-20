@@ -11,7 +11,9 @@
 	<link rel="stylesheet" href="src/css/person-card.css" />
 	<link rel="stylesheet" href="src/css/gallery.css" />
 	<link rel="stylesheet" href="src/css/catalog.css" />
-	<link rel="stylesheet" href="src/css/reviews.css">
+	<link rel="stylesheet" href="src/css/reviews.css" />
+	<link rel="stylesheet" href="src/css/blog.css" />
+	<link rel="stylesheet" href="src/css/contact.css" />
 	<script src="script.js" type="module"></script>
 </head>
 
@@ -58,7 +60,7 @@
 			<div class="presentacion-card">
 				<div class="person-card">
 					<div class="person-img">
-						<img src="/src/assets/img/person-card/dania.jpg" alt="Foto de la persona" />
+						<img src="src/assets/img/person-card/dania.jpg" alt="Foto de la persona" />
 					</div>
 					<div class="person-info">
 						<h2>Nombre Apellido</h2>
@@ -198,7 +200,7 @@
 	</section>
 
 	<section class="reviews-section">
-		<h2>Customer Reviews</h2>
+		<h2 class="review-header">Customer Reviews</h2>
 		<div class="review-cards-container">
 			<!-- Example review card -->
 			<div class="review-card">
@@ -265,39 +267,47 @@
 		</form>
 	</section>
 
-	<section id="blog">
-		<h2>Nuestro blog</h2>
-		<ul>
-			<li>
-				<h3>Cómo hacer un pastel de zanahoria delicioso</h3>
-				<p>
-					En este artículo, te enseñamos cómo hacer un pastel de zanahoria
-					delicioso en casa.
-				</p>
-				<a href="#">Leer más</a>
-			</li>
-			<li>
-				<h3>Las mejores recetas de cupcakes</h3>
-				<p>
-					En este artículo, te compartimos algunas de nuestras mejores recetas
-					de cupcakes para que puedas disfrutar en casa.
-				</p>
-				<a href="#">Leer más</a>
-			</li>
-			<!-- Agrega más publicaciones aquí -->
-		</ul>
+	<section class="blog-section">
+		<h2 class="section-title">Cake Blog</h2>
+		<div class="blog-post">
+			<h3 class="post-title">Cómo hacer un pastel de zanahoria delicioso</h3>
+			<p class="post-info">By John Smith on January 1, 2023</p>
+			<img src="cake-history.jpg" alt="Cake History" />
+			<p class="post-content">
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
+				molestie ipsum auctor nibh interdum, eu blandit elit lacinia. Sed
+				volutpat, enim et varius tristique, urna sapien tincidunt est, in
+				blandit turpis massa vitae mi.
+			</p>
+			<a href="#" class="read-more">Read More</a>
+		</div>
+		<div class="blog-post">
+			<h3 class="post-title">The Science of Baking</h3>
+			<p class="post-info">By Jane Doe on January 2, 2023</p>
+			<img src="science-of-baking.jpg" alt="Science of Baking" />
+			<p class="post-content">
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
+				molestie ipsum auctor nibh interdum, eu blandit elit lacinia. Sed
+				volutpat, enim et varius tristique, urna sapien tincidunt est, in
+				blandit turpis massa vitae mi.
+			</p>
+			<a href="#" class="read-more">Read More</a>
+		</div>
 	</section>
 
-	<section id="contacto">
-		<h2>Contáctanos</h2>
+	<section id="contact">
+		<h2>Contact Us</h2>
 		<form action="#" method="POST">
-			<label for="nombre">Nombre:</label>
-			<input type="text" id="nombre" name="nombre" required />
-			<label for="correo">Correo electrónico:</label>
-			<input type="email" id="correo" name="correo" required />
-			<label for="mensaje">Mensaje:</label>
-			<textarea id="mensaje" name="mensaje" required></textarea>
-			<button type="submit">Enviar mensaje</button>
+			<label for="name">Name:</label>
+			<input type="text" id="name" name="name" required />
+
+			<label for="email">Email:</label>
+			<input type="email" id="email" name="email" required />
+
+			<label for="message">Message:</label>
+			<textarea id="message" name="message" rows="5" required></textarea>
+
+			<button type="submit">Send</button>
 		</form>
 	</section>
 

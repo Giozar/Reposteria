@@ -1,0 +1,128 @@
+.blog-section {
+    margin: 50px auto;
+    max-width: 800px;
+    background-color: #FCEAE6;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.section-title {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 50px;
+    color: #dd6b4d;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.blog-post {
+    margin-bottom: 30px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.post-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #dd6b4d;
+}
+
+.post-info {
+    font-size: 14px;
+    color: #999;
+    margin-bottom: 10px;
+}
+
+.post-content {
+    margin-top: 10px;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #444;
+}
+
+.read-more {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #dd6b4d;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 3px;
+    transition: background-color 0.2s ease;
+}
+
+.read-more:hover {
+    background-color: #c3573a;
+}
+
+/* Add some pastry-themed styling */
+.blog-section {
+    background-image: url("pastry-bg.jpg");
+    background-repeat: repeat;
+}
+
+.blog-post img {
+    float: left;
+    margin-right: 20px;
+    max-width: 300px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.post-title:before {
+    content: "";
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-image: url("cupcake-icon.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-right: 10px;
+    margin-bottom: -10px;
+    transform: translateY(-5px);
+}
+
+.post-info:after {
+    content: "";
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-image: url("calendar-icon.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-left: 5px;
+    margin-right: 5px;
+    transform: translateY(3px);
+}
+
+.post-content:before {
+    content: "";
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-image: url("chef-icon.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-right: 10px;
+    margin-bottom: -10px;
+    transform: translateY(-5px);
+}
+
+.read-more:before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url("arrow-icon.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: 10px;
+    transform: rotate(45deg);
+}
+
+.read-more:hover:before {
+    transform: rotate(225deg);
+}

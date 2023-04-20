@@ -1,146 +1,128 @@
-/* Review section */
-.reviews-section {
+.blog-section {
+  margin: 50px auto;
   max-width: 800px;
-  margin: 0 auto;
-  padding: 50px 20px;
-  background-color: #FCEAE6;
+  background-color: #f5f5f5;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
 }
 
-/* Review cards */
-.review-cards-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+.section-title {
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 50px;
+  color: #dd6b4d;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
 }
 
-.review-card {
-  background-color: #fff;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-  border-radius: 5px;
-  padding: 20px;
+.blog-post {
   margin-bottom: 30px;
-  width: calc(33.33% - 20px);
-  min-width: 300px;
+  border: 1px solid #ccc;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
 }
 
-.review-card-title {
-  font-size: 20px;
-  font-weight: bold;
+.post-title {
+  font-size: 24px;
   margin-bottom: 10px;
+  color: #dd6b4d;
 }
 
-.review-card-content {
-  font-size: 16px;
-  margin-bottom: 20px;
-}
-
-.review-card-tags {
-  margin-bottom: 20px;
-}
-
-.review-card-photo {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  margin-right: 10px;
-}
-
-
-.tag {
-  background-color: #FFD3B5;
-  color: #C96454;
-  border-radius: 5px;
-  padding: 5px 10px;
-  margin-right: 10px;
+.post-info {
   font-size: 14px;
-  display: inline-block;
-}
-
-.review-card-likes {
-  font-size: 16px;
   color: #999;
   margin-bottom: 10px;
 }
 
-.heart-icon {
-  color: #ff5050;
-  margin-right: 5px;
-  cursor: pointer;
-}
-
-.heart-icon:hover {
-  color: #e60000;
-}
-
-.heart-icon.active {
-  color: #e60000;
-}
-
-/* Review form */
-.review-form {
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 20px;
-  background-color: #FCEAE6;
-  border-radius: 5px;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.form-group {
-  margin-bottom: 20px;
-}
-
-label {
-  display: block;
-  font-weight: bold;
-  margin-bottom: 10px;
-  color: #C96454;
-}
-
-input[type="text"],
-textarea {
-  width: 100%;
-  padding: 10px;
-  border: none;
-  border-radius: 5px;
-  box-shadow: inset 0px 1px 2px rgba(0, 0, 0, 0.1);
+.post-content {
+  margin-top: 10px;
   font-size: 16px;
-  margin-bottom: 10px;
+  line-height: 1.5;
+  color: #444;
 }
 
-input[type="text"]:focus,
-textarea:focus {
-  outline: none;
-  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
-}
-
-.rating {
-  font-size: 0;
-}
-
-.star-icon {
-  font-size: 30px;
-  color: #ddd;
-  cursor: pointer;
+.read-more {
   display: inline-block;
-  margin-right: 5px;
+  margin-top: 10px;
+  padding: 5px 10px;
+  background-color: #dd6b4d;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 3px;
+  transition: background-color 0.2s ease;
 }
 
-.star-icon.active,
-.star-icon:hover {
-  color: #ffc107;
+.read-more:hover {
+  background-color: #c3573a;
 }
 
-/* Button styles */
-.btn {
-  background-color: #FFD3B5;
-  color: #C96454;
-  border: none;
+/* Add some pastry-themed styling */
+.blog-section {
+  background-image: url("pastry-bg.jpg");
+  background-repeat: repeat;
+}
+
+.blog-post img {
+  float: left;
+  margin-right: 20px;
+  max-width: 300px;
   border-radius: 5px;
-  padding: 10px 20px;
-  font-size: 16px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: all 0.3s ease;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
 }
 
+.post-title:before {
+  content: "";
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-image: url("cupcake-icon.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin-right: 10px;
+  margin-bottom: -10px;
+  transform: translateY(-5px);
+}
+
+.post-info:after {
+  content: "";
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background-image: url("calendar-icon.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin-left: 5px;
+  margin-right: 5px;
+  transform: translateY(3px);
+}
+
+.post-content:before {
+  content: "";
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background-image: url("chef-icon.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin-right: 10px;
+  margin-bottom: -10px;
+  transform: translateY(-5px);
+}
+
+.read-more:before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url("arrow-icon.png");
+  background-repeat: no-repeat;
+  background-size:cover;
+  margin-right: 10px;
+  transform: rotate(45deg);
+}
+
+.read-more:hover:before {
+transform: rotate(225deg);
+}
