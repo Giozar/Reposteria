@@ -1,3 +1,28 @@
+/* estilos del catalogo de pasteles */
+.catalogo{
+    margin: 50px auto;
+    max-width: 800px;
+    background-color: #FCEAE6;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.catalog-title{
+    text-align: center;
+    font-family: 'Qwigley', cursive;
+    color: #8F4847;
+    font-size: 60px;
+    margin: auto;
+}
+.catalog-container{
+    display: flex;
+}
+.catalog-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+}  
+
 .card {
     width: 300px;
     height: 500px;

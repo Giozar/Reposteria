@@ -1,12 +1,23 @@
 #contact {
-    background-color: #FFE6CC; /*sweety background color*/
-    padding: 50px;
-    text-align: center;
+  margin: 50px auto;
+  max-width: 800px;
+  background-color: #FCEAE6;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
   }
-  
-  #contact h2 {
-    font-size: 36px;
-    margin-bottom: 30px;
+
+  .contact-title{
+    font-size: 86px;
+    font-family: 'Qwigley', cursive;
+    text-align: center;
+    margin-bottom: 50px;
+    color: #dd6b4d;
+    margin: auto;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
   }
   
   #contact form {

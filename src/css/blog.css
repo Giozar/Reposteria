@@ -8,10 +8,12 @@
 }
 
 .section-title {
-    font-size: 36px;
+    font-size: 86px;
+    font-family: 'Qwigley', cursive;
     text-align: center;
     margin-bottom: 50px;
     color: #dd6b4d;
+    margin: auto;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
@@ -44,18 +46,20 @@
 }
 
 .read-more {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 5px 10px;
-    background-color: #dd6b4d;
-    color: #fff;
+    background-color: #FFD3B5;
+    color: #C96454;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
     text-decoration: none;
-    border-radius: 3px;
-    transition: background-color 0.2s ease;
 }
 
 .read-more:hover {
-    background-color: #c3573a;
+    background-color: #febc90;
 }
 
 /* Add some pastry-themed styling */
@@ -116,7 +120,7 @@
     display: inline-block;
     width: 20px;
     height: 20px;
-    background-image: url("arrow-icon.png");
+    background-image: url("/src/assets/img/blog/arrow-icon.png");
     background-repeat: no-repeat;
     background-size: cover;
     margin-right: 10px;

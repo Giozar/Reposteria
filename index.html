@@ -8,6 +8,7 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
 	<link rel="shortcut icon" href="/src/assets/img/fav-icon/mini1.png" type="image/x-icon" />
 	<link rel="stylesheet" href="estilos.css" />
+	<link rel="stylesheet" href="src/css/nav-bar.css">
 	<link rel="stylesheet" href="src/css/person-card.css" />
 	<link rel="stylesheet" href="src/css/gallery.css" />
 	<link rel="stylesheet" href="src/css/catalog.css" />
@@ -79,7 +80,6 @@
 					</div>
 				</div>
 			</div>
-
 			<div class="presentacion-txt">
 				<h1 class="principal-title">Bienvenidos a Repostería Delicias</h1>
 				<p class="descripcion-txt">
@@ -126,7 +126,7 @@
 				</section>
 			</div>
 		</div>
-		<button id="realizar-pedido">Realizar un pedido</button>
+		<button class="realizar-pedido" id="realizar-pedido">Realizar un pedido</button>
 	</section>
 
 	<section class="catalogo" id="catalogo">
@@ -296,8 +296,10 @@
 	</section>
 
 	<section id="contact">
-		<h2>Contact Us</h2>
 		<form action="#" method="POST">
+			
+			<h2 class="contact-title">Contact Us</h2>
+
 			<label for="name">Name:</label>
 			<input type="text" id="name" name="name" required />
 

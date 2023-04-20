@@ -1,0 +1,99 @@
+/* Estilos para la barra de navegación */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #F7C1B8;
+    padding: 10px;
+    z-index: 999;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover span {
+    opacity: 1;
+}
+
+nav ul li a:hover i {
+    opacity: 0;
+}
+
+nav ul li a span {
+    position: absolute;
+    bottom: 10px;
+    opacity: 0;
+    transition: all 0.1s ease;
+}
+
+nav ul li a i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.1s ease;
+}
+
+nav ul li:nth-child(1) a {
+    background-color: #FCE1D2;
+}
+
+nav ul li:nth-child(1):hover a {
+    background: linear-gradient(to right, #F5DDA9, #eec774);
+}
+
+nav ul li:nth-child(2) a {
+    background-color: #FCE1D2;
+}
+
+nav ul li:nth-child(2):hover a {
+    background: linear-gradient(to right, #EEC2A1, #f0a770);
+}
+
+nav ul li:nth-child(3) a {
+    background-color: #FCE1D2;
+}
+
+nav ul li:nth-child(3):hover a {
+    background: linear-gradient(to right, #E9A997, #ee886c);
+}
+
+nav ul li:nth-child(4) a {
+    background-color: #FCE1D2;
+}
+
+nav ul li:nth-child(4):hover a {
+    background: linear-gradient(to right, #E08D8E, #eb6e70);
+}
+
+
+nav ul li:nth-child(5) a {
+    background-color: #FCE1D2;
+}
+
+nav ul li:nth-child(5):hover a {
+    background: linear-gradient(to right, #D782A0, #e7696b);
+}
+
+nav ul li a:hover {
+    width: 120px;
+    height: 40px;
+    border-radius: 50px;
+}
