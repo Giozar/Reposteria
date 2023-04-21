@@ -21,6 +21,7 @@
     border-radius: 100px 100px 100px 100px;
 }
 .gallery-item {
+  color: #8F4847;
     margin: 20px;
     justify-content: center;
   }
@@ -58,3 +59,42 @@
   h3{
     font-family: 'Lobster', cursive;
   }
+
+
+  @media screen and (max-width: 768px) {
+    .gallery-container {
+      height: 60vh;
+      width: 90%;
+    }
+    .gallery{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      gap: 1px;
+      grid-template-areas:
+    "elem1 elem2"
+    "elem3 elem4";
+    }
+
+    .gallery-item:nth-child(1) {
+      grid-area: elem1;
+    }
+    
+    .gallery-item:nth-child(2) {
+      grid-area: elem2;
+    }
+    
+    .gallery-item:nth-child(3) {
+      grid-area: elem3;
+    }
+    
+    .gallery-item:nth-child(4) {
+      grid-area: elem4;
+    }
+    
+    .gallery-item {
+      margin: 10px;
+      text-align: center;
+    }
+  }
+  

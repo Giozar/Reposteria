@@ -44,16 +44,18 @@
   }
   
   #contact button[type="submit"] {
-    background-color: #FFB84D;
-    color: #fff;
+    background-color: #FFD3B5;
+    color: #C96454;
     border: none;
+    border-radius: 5px;
     padding: 10px 20px;
-    font-size: 18px;
+    font-size: 16px;
+    font-weight: bold;
     cursor: pointer;
-    transition: background-color 0.3s ease-in-out;
+    transition: all 0.3s ease;
   }
   
   #contact button[type="submit"]:hover {
-    background-color: #FFA833;
+    background-color: #febc90;
   }
   

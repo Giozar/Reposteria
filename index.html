@@ -6,7 +6,7 @@
 	<title>Repostería Delicias</title>
 	<!-- Enlace a la librería de iconos -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
-	<link rel="shortcut icon" href="/src/assets/img/fav-icon/mini1.png" type="image/x-icon" />
+	<link rel="shortcut icon" href="src/assets/img/fav-icon/mini1.png" type="image/x-icon" />
 	<link rel="stylesheet" href="estilos.css" />
 	<link rel="stylesheet" href="src/css/nav-bar.css">
 	<link rel="stylesheet" href="src/css/person-card.css" />
@@ -41,13 +41,13 @@
 					</a>
 				</li>
 				<li>
-					<a href="#contacto">
+					<a href="#contact">
 						<span>Contacto</span>
 						<i class="fas fa-envelope"></i>
 					</a>
 				</li>
 				<li>
-					<a href="#testimonios">
+					<a href="#reviews-section">
 						<span>Testimonios</span>
 						<i class="fas fa-comment"></i>
 					</a>
@@ -57,6 +57,7 @@
 	</header>
 
 	<section class="inicio" id="inicio">
+		<h1 class="principal-title">Bienvenidos a Repostería Delicias</h1>
 		<div class="presentacion">
 			<div class="presentacion-card">
 				<div class="person-card">
@@ -80,45 +81,42 @@
 					</div>
 				</div>
 			</div>
-			<div class="presentacion-txt">
-				<h1 class="principal-title">Bienvenidos a Repostería Delicias</h1>
-				<p class="descripcion-txt">
-					¡Bienvenidos a nuestra página web de repostería! Aquí podrán
-					disfrutar de una amplia variedad de deliciosos postres que estamos
-					seguros satisfarán su paladar y despertarán su dulce lado. En
-					nuestra repostería, nos apasiona crear sabores únicos y frescos
-					utilizando solo los ingredientes de la más alta calidad. Desde
-					pasteles y cupcakes hasta galletas y brownies, ofrecemos una gran
-					variedad de opciones dulces para que puedan disfrutar en cualquier
-					ocasión. Además, estamos comprometidos a brindar un servicio
-					excepcional y personalizado para cada uno de nuestros clientes.
-				</p>
-			</div>
+			<p class="descripcion-txt">
+				¡Bienvenidos a nuestra página web de repostería! Aquí podrán
+				disfrutar de una amplia variedad de deliciosos postres que estamos
+				seguros satisfarán su paladar y despertarán su dulce lado. En
+				nuestra repostería, nos apasiona crear sabores únicos y frescos
+				utilizando solo los ingredientes de la más alta calidad. Desde
+				pasteles y cupcakes hasta galletas y brownies, ofrecemos una gran
+				variedad de opciones dulces para que puedan disfrutar en cualquier
+				ocasión. Además, estamos comprometidos a brindar un servicio
+				excepcional y personalizado para cada uno de nuestros clientes.
+			</p>
 		</div>
 
 		<div class="galeria">
 			<div class="gallery-container">
 				<section class="gallery">
 					<div class="gallery-item">
-						<img src="/src/assets/img/gallery/chocolate.jpg" alt="Chocolate" />
+						<img src="src/assets/img/gallery/chocolate.jpg" alt="Chocolate" />
 						<div class="gallery-item-overlay">
 							<h3>Chocolate</h3>
 						</div>
 					</div>
 					<div class="gallery-item">
-						<img src="/src/assets/img/gallery/tres-leches.jpg" alt="Tres Leches" />
+						<img src="src/assets/img/gallery/tres-leches.jpg" alt="Tres Leches" />
 						<div class="gallery-item-overlay">
 							<h3>Tres Leches</h3>
 						</div>
 					</div>
 					<div class="gallery-item">
-						<img src="/src/assets/img/gallery/vainilla.jpg" alt="Vainilla" />
+						<img src="src/assets/img/gallery/vainilla.jpg" alt="Vainilla" />
 						<div class="gallery-item-overlay">
 							<h3>Vainilla</h3>
 						</div>
 					</div>
 					<div class="gallery-item">
-						<img src="/src/assets/img/gallery/cupcake.jpg" alt="Cupcake" />
+						<img src="src/assets/img/gallery/cupcake.jpg" alt="Cupcake" />
 						<div class="gallery-item-overlay">
 							<h3>Cupcake</h3>
 						</div>
@@ -126,7 +124,9 @@
 				</section>
 			</div>
 		</div>
-		<button class="realizar-pedido" id="realizar-pedido">Realizar un pedido</button>
+		<div class="btn-container">
+			<button class="realizar-pedido" id="realizar-pedido">Realizar un pedido</button>
+		</div>
 	</section>
 
 	<section class="catalogo" id="catalogo">
@@ -137,7 +137,7 @@
 					<p class="price">$00.00</p>
 				</div>
 				<div class="card-image">
-					<img src="/src/assets/img/catalog/chocolate.png" alt="Pastel" />
+					<img src="src/assets/img/catalog/chocolate.png" alt="Pastel" />
 				</div>
 				<div class="card-title">
 					<h3>Chocolate Cake</h3>
@@ -199,12 +199,12 @@
 		</div>
 	</section>
 
-	<section class="reviews-section">
+	<section id="reviews-section" class="reviews-section">
 		<h2 class="review-header">Customer Reviews</h2>
 		<div class="review-cards-container">
 			<!-- Example review card -->
 			<div class="review-card">
-				<img class="review-card-photo" src="/src/assets/img/person-card/dania.jpg" alt="User Photo" />
+				<img class="review-card-photo" src="src/assets/img/person-card/dania.jpg" alt="User Photo" />
 				<div class="rating">
 					<span class="star-icon">&#9733;</span>
 					<span class="star-icon">&#9733;</span>
@@ -272,7 +272,7 @@
 		<div class="blog-post">
 			<h3 class="post-title">Cómo hacer un pastel de zanahoria delicioso</h3>
 			<p class="post-info">By John Smith on January 1, 2023</p>
-			<img src="cake-history.jpg" alt="Cake History" />
+			<img src="src/assets/img/blog/pastel-zanahoria.jpg" alt="Cake History" />
 			<p class="post-content">
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
 				molestie ipsum auctor nibh interdum, eu blandit elit lacinia. Sed
@@ -284,7 +284,7 @@
 		<div class="blog-post">
 			<h3 class="post-title">The Science of Baking</h3>
 			<p class="post-info">By Jane Doe on January 2, 2023</p>
-			<img src="science-of-baking.jpg" alt="Science of Baking" />
+			<img src="src/assets/img/blog/pastel-historia.jpg" alt="Science of Baking" />
 			<p class="post-content">
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
 				molestie ipsum auctor nibh interdum, eu blandit elit lacinia. Sed

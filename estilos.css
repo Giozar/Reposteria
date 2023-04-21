@@ -14,6 +14,7 @@ body {
     margin: 0px;
     padding: 0px;
 }
+
 /* estilos de la seccion de inicio */
 .inicio {
     margin: 50px auto;
@@ -24,31 +25,47 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
-.presentacion {
-    display: flex;
-    border: solid;
-}
-
-.presentacion-txt {
-    margin: 0% 10% 0% 5%;
-    width: 500px;
-    padding-bottom: 5%;
-}
-
 .principal-title {
     font-family: 'Qwigley', cursive;
     font-size: 4em;
     text-align: center;
     color: #8B0000;
-    text-shadow: 2px 2px 2px rgba(0,0,0,0.4);
-    border-bottom: 3px solid #8B0000; 
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
+    border-bottom: 3px solid #8B0000;
+    border-top: 3px solid #8B0000;
 }
 
+.presentacion {
+    display: flex;
+}
 
-.descripcion-txt{
+.descripcion-txt {
     color: #A97F8B;
     font-family: 'Century Gothic', sans-serif;
     text-align: justify;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 50%;
+    height: 400px;
+}
+
+@media only screen and (max-width: 768px) {
+    .descripcion-txt {
+        width: 40%;
+        font-size: 12px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        text-align: justify;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .descripcion-txt {
+        font-size: 10px;
+        width: 40%;
+    }
 }
 
 /* estilos de la carta de presentacion */
@@ -56,11 +73,15 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 400px;
+    width: 40%;
     height: 400px;
 }
 
 /* Estilos para el boton */
+.btn-container{
+    display: flex;
+    justify-content: center;
+}
 .realizar-pedido {
     display: inline-block;
     margin: 0 auto;

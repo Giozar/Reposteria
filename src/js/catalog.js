@@ -4,13 +4,13 @@ const plantilla = `
 	<p class="price"> $00.00</p>
 </div>
 <div class="card-image">
-	<img src="/src/assets/img/catalog/chocolate.png" alt="Pastel" />
+	<img src="src/assets/img/catalog/chocolate.png" alt="Pastel" />
 </div>
 <div class="card-title">
 	<h3>Chocolate Cake</h3>
 </div>
 <div class="card-details">
-	<!-- <div class="card-size el">
+		<div class="card-size el">
 		<div class="size-title">Tamaño:</div>
 		<div class="size small">C</div>
 		<div class="size medium">M</div>
@@ -46,16 +46,16 @@ const plantilla = `
 				<label for="quinceanera">Quinceañera</label>
 			</div>
 		</div>
-	</div> -->
+	</div>
 
-	<div class="card-description">
+	<!--	<div class="card-description">
 		<p class="card-description-title">Descripción</p>
 		<p class="card-description-txt">
 			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
 			dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip 
 			ex ea commodo consequat.
 		</p>
-	</div>
+	</div>	-->
 
 	<div class="card-buy el">
 		<button class="comprar-btn">
